@@ -1,0 +1,297 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #F3ECE0;
+    height: 500px;
+   
+    }
+  
+    .calculator {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      min-height: 100vh;
+      grid-template-columns: repeat(7 , 100px);
+      grid-template-rows: minmax(130px, auto ) repeat(5, 60px);
+      
+     
+      
+      
+
+      
+      }
+  
+      .calculator > button {
+        cursor: pointer;
+        font-size: 1.5rem;
+        outline: none;
+        background-color: #596E79;
+        border-radius: 10px;
+        color: white;
+        margin: 10px;
+        border-top: 50px;
+        border:none;
+        
+      }
+  
+        .calculator > button:hover {
+          background-color: #DFD3C3;
+          color: black;
+          
+        }
+
+        .span-three {
+          grid-column: span 2;
+        }
+        .span-two {
+          grid-column: span 2;
+          background-color: #596E79;
+         
+        }
+  
+        .ekran{
+
+          grid-column: 1/ -1;
+          background-color: white;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          flex-direction: column;
+          padding: 10px;
+          word-wrap: break-word;
+          word-break: break-all;
+          border-radius: 5px;
+          
+          
+          
+        
+          
+          
+        }
+  
+        .ekran .pervayachast{
+          color: rgba(0, 0, 0, 0.397);
+          font-size: 1.5rem;
+          
+          
+        }
+  
+        .ekran .vtorayachast{
+          color: rgba(0, 0, 0, 0.856);
+          font-size: 2.5rem;
+          border: 10px #C7B198;
+        }
+
+    #header {
+        background-color: #596E79;
+        height: 60px;
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+
+
+
+    #fonsvetlii {
+        height: 480px;
+        width: 50%;
+        background-color: #DFD3C3;
+        border-radius: 7px;
+        position: absolute;
+        top: 22.5%;
+        left: 26%;
+    }
+
+    
+  
+
+    #fontemnii{
+        background-color: #C7B198;
+        height: 380px;
+        width: 55%;
+        border-radius: 7px;
+        position: absolute;
+        top: 30%;
+        left: 23.4%;
+    }
+    
+    #nado {
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        border: none;
+        opacity: 1;
+    
+    }
+
+    #sistem {
+      background: #596E79;
+      cursor: pointer;
+      padding: 10px 50px; 
+      border-radius: 6px;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      
+      
+     
+      
+    }
+
+    #sistem:hover {
+      background: #C7B198;
+      cursor: pointer;
+      color: black;
+
+    }
+    #obichnii {
+      background: #596E79;
+      cursor: pointer;
+      padding: 10px 50px; 
+      border-radius: 6px;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      margin: 10px;
+      
+      
+     
+      
+    }
+    #obichnii:hover {
+      background: #C7B198;
+      cursor: pointer;
+      color: black;
+
+    }
+
+    #knopki {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin: 10px;
+    }
+    
+    
+
+
+
+    .nazvanie {
+      font-size: 25px;
+      font-family:  Gotham Rounded, sans-serif;
+      display: flex;
+      justify-content: flex-start;
+      margin: 20px;
+      
+      
+  }
+  
+  
+  .convert {
+      border-radius: 6px;
+      border: none;
+      font-size: 1.5rem;
+      background-color: #596E79;
+      color:white;
+      cursor: pointer;
+      padding: 5px 10px; 
+      margin: 20px;
+      width: 20%;
+     
+      
+  }
+  
+  .convert:hover {
+      background-color: #DFD3C3;
+      color: black;
+  }
+  
+  .tekst {
+      border-radius: 6px;
+      border: none;
+      font-size: 20px;
+      background-color: #DFD3C3;
+      padding: 10px;
+      margin: 20px;
+    
+      
+  
+  }
+  
+  .shrift {
+      font-family: Gotham Rounded, sans-serif;
+      font-size:1rem;
+      margin: 30px;
+
+  }
+  
+  .rez{
+      border-radius: 5px;
+      font-size:25px;
+      margin: 20px;
+      
+  }
+  #perevod {
+    opacity: 0;
+    display: none;
+    
+    
+  }
+
+  #proba {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+
+
+  #telo{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+  }
+
+  #m {
+    width: 20%;
+
+  }
+  #n {
+    width: 20%;
+  }
+  #chislo {
+    width: 20%;
+  }
+
+  #fonprimerov {
+    background-color: #DFD3C3;
+    height: 45%;
+    width: 40%;
+    border-radius: 7px;
+    position: absolute;
+    top: 43.5%;
+    left: 35%;
+  }
+
+  .primerchiki {
+    font-size: 25px;
+    font-family:  Gotham Rounded, sans-serif;
+    position: absolute;
+    left: 35%;
+    top: 33.5%;
+      
+  }
+
+  #slova {
+    display: flex;
+    justify-content: space-between;
+
+  }
